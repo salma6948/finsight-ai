@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finsight-ai"
+version = "2.0.0"
+description = "Source-grounded financial research copilot with auditable metrics and document retrieval"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "pandas>=2.0,<3", "numpy>=1.24,<3",
+  "PyMuPDF>=1.24,<2", "requests>=2.31,<3",
+  "streamlit>=1.35,<2", "plotly>=5.20,<7",
+  "langgraph>=0.2,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.6,<1"]
+
+[tool.setuptools.packages.find]
+include = ["finsight*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100

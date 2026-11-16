@@ -1,0 +1,43 @@
+{
+  "description": "Small hand-labeled smoke benchmark. Synthetic PDF passages in eval are not claimed to be original filings.",
+  "numeric": [
+    {
+      "question": "What was Microsoft's revenue in 2026?",
+      "expected": "331,839"
+    },
+    {
+      "question": "Apple revenue in 2026",
+      "expected": "478,834"
+    },
+    {
+      "question": "NVIDIA revenue growth 2026",
+      "expected": "65.47%"
+    },
+    {
+      "question": "Microsoft operating income in 2026",
+      "expected": "155,237"
+    },
+    {
+      "question": "Apple net income in 2025",
+      "expected": "112,010"
+    }
+  ],
+  "retrieval": [
+    {
+      "question": "What was LVMH revenue for 2025?",
+      "expected_chunk": "lvmh_revenue"
+    },
+    {
+      "question": "What is currency risk exposure?",
+      "expected_chunk": "lvmh_risk"
+    },
+    {
+      "question": "Which segments include Fashion and Leather Goods?",
+      "expected_chunk": "lvmh_segments"
+    },
+    {
+      "question": "Where are the data centers?",
+      "expected_chunk": null
+    }
+  ]
+}
